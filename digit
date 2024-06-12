@@ -1,0 +1,7 @@
+#load dataset
+dataset = io.loadmat('./dataset/Data_hoda_full.mat')
+  #test and training set
+X_train_orginal = np.squeeze(dataset['Data'][:1000])
+y_train = np.squeeze(dataset['labels'][:1000])
+X_test_original = np.squeeze(dataset['Data'][1000:1200])
+y_test = np.squeeze(dataset['labels'][1000:1200])
